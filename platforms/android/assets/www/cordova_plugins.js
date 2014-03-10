@@ -41,6 +41,13 @@ module.exports = [
         "clobbers": [
             "navigator.battery"
         ]
+    },
+    {
+        "file": "plugins/org.apache.cordova.device/www/device.js",
+        "id": "org.apache.cordova.device.device",
+        "clobbers": [
+            "device"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -48,7 +55,8 @@ module.exports.metadata =
 {
     "org.apache.cordova.device-motion": "0.2.6",
     "org.apache.cordova.device-orientation": "0.3.5",
-    "org.apache.cordova.battery-status": "0.2.7"
+    "org.apache.cordova.battery-status": "0.2.7",
+    "org.apache.cordova.device": "0.2.8"
 }
 // BOTTOM OF METADATA
 });

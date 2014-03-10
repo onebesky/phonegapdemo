@@ -8,6 +8,7 @@ C:\Proj\phonegap\freshbattery\platforms\android\bin\classes\co\freshrealm\mybatt
 C:\Proj\phonegap\freshbattery\platforms\android\bin\classes\co\freshrealm\mybattery\R.class \
 C:\Proj\phonegap\freshbattery\platforms\android\bin\classes\org\apache\cordova\batterystatus\BatteryListener$1.class \
 C:\Proj\phonegap\freshbattery\platforms\android\bin\classes\org\apache\cordova\batterystatus\BatteryListener.class \
+C:\Proj\phonegap\freshbattery\platforms\android\bin\classes\org\apache\cordova\device\Device.class \
 C:\Proj\phonegap\freshbattery\platforms\android\bin\classes\org\apache\cordova\devicemotion\AccelListener$1.class \
 C:\Proj\phonegap\freshbattery\platforms\android\bin\classes\org\apache\cordova\devicemotion\AccelListener.class \
 C:\Proj\phonegap\freshbattery\platforms\android\bin\classes\org\apache\cordova\deviceorientation\CompassListener$1.class \

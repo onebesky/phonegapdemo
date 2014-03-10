@@ -36,12 +36,18 @@ var app = {
     // function, we must explicity call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
+        app.updateDeviceName();
         document.addEventListener("batterystatus", app.onBatteryStatus, false);
         //navigator.accelerometer.getCurrentAcceleration(onPhoneMove, function(){console.log("acceleration error")});
-        this.watchId = navigator.accelerometer.watchAcceleration(app.onPhoneMove, function(){alert("accelerometer failed")}, {
+        app.watchId = navigator.accelerometer.watchAcceleration(app.onPhoneMove, function(){alert("accelerometer failed")}, {
             frequency: 250
         });
         
+    },
+    updateDeviceName: function(){
+        var deviceElement = document.getElementById("device-name");
+        console.log(window.device);
+        deviceElement.innerHTML = window.device.name;
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {

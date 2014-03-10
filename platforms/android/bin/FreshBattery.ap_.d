@@ -30,10 +30,13 @@ C:\Proj\phonegap\freshbattery\platforms\android\assets\www\img\logo.png \
 C:\Proj\phonegap\freshbattery\platforms\android\assets\www\img\logo_phone.png \
 C:\Proj\phonegap\freshbattery\platforms\android\assets\www\js\index.js \
 C:\Proj\phonegap\freshbattery\platforms\android\assets\www\plugins\org.apache.cordova.battery-status \
+C:\Proj\phonegap\freshbattery\platforms\android\assets\www\plugins\org.apache.cordova.device \
 C:\Proj\phonegap\freshbattery\platforms\android\assets\www\plugins\org.apache.cordova.device-motion \
 C:\Proj\phonegap\freshbattery\platforms\android\assets\www\plugins\org.apache.cordova.device-orientation \
 C:\Proj\phonegap\freshbattery\platforms\android\assets\www\plugins\org.apache.cordova.battery-status\www \
 C:\Proj\phonegap\freshbattery\platforms\android\assets\www\plugins\org.apache.cordova.battery-status\www\battery.js \
+C:\Proj\phonegap\freshbattery\platforms\android\assets\www\plugins\org.apache.cordova.device\www \
+C:\Proj\phonegap\freshbattery\platforms\android\assets\www\plugins\org.apache.cordova.device\www\device.js \
 C:\Proj\phonegap\freshbattery\platforms\android\assets\www\plugins\org.apache.cordova.device-motion\www \
 C:\Proj\phonegap\freshbattery\platforms\android\assets\www\plugins\org.apache.cordova.device-motion\www\Acceleration.js \
 C:\Proj\phonegap\freshbattery\platforms\android\assets\www\plugins\org.apache.cordova.device-motion\www\accelerometer.js \
