@@ -17,6 +17,8 @@
  * under the License.
  */
 var app = {
+    
+    
     // Application Constructor
     initialize: function() {
         this.bindEvents();
@@ -36,7 +38,11 @@ var app = {
     onDeviceReady: function() {
         var self = this;
         app.receivedEvent('deviceready');
-        //document.addEventListener("batterystatus", self.onBatteryStatus, false);
+        document.addEventListener("batterystatus", app.onBatteryStatus, false);
+        //navigator.accelerometer.getCurrentAcceleration(onPhoneMove, function(){console.log("acceleration error")});
+        this.watchId = navigator.accelerometer.watchAcceleration(app.onPhoneMove, function(){alert("accelerometer failed")}, {
+            frequency: 250
+        });
         
     },
     // Update DOM on a Received Event
@@ -49,8 +55,12 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
-    }
-    /*onBatteryStatus: function(info) {
+    },
+    onPhoneMove: function(acceleration){
+        var xElement = document.getElementById("x-axis");
+        xElement.innerHTML=acceleration.x;
+    },
+    onBatteryStatus: function(info) {
         // Handle the online event
         console.log("Level: " + info.level + " isPlugged: " + info.isPlugged);
         this.displayBatteryInfo(info.level);
@@ -58,6 +68,5 @@ var app = {
     displayBatteryInfo: function(value){
         var statusElement = document.querySelector('#battery-status');
         statusElement.innerHTML = value;
-        //navigator.
-    }*/
+    }
 };

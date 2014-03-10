@@ -17,6 +17,7 @@
  * under the License.
  */
 var app = {
+    
     // Application Constructor
     initialize: function() {
         this.bindEvents();
@@ -34,9 +35,12 @@ var app = {
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicity call 'app.receivedEvent(...);'
     onDeviceReady: function() {
-        var self = this;
         app.receivedEvent('deviceready');
-        document.addEventListener("batterystatus", self.onBatteryStatus, false);
+        document.addEventListener("batterystatus", app.onBatteryStatus, false);
+        //navigator.accelerometer.getCurrentAcceleration(onPhoneMove, function(){console.log("acceleration error")});
+        this.watchId = navigator.accelerometer.watchAcceleration(app.onPhoneMove, function(){alert("accelerometer failed")}, {
+            frequency: 250
+        });
         
     },
     // Update DOM on a Received Event
@@ -49,6 +53,10 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
+    },
+    onPhoneMove: function(acceleration){
+        var xElement = document.getElementById("x-axis");
+        xElement.innerHTML=acceleration.x;
     },
     onBatteryStatus: function(info) {
         // Handle the online event

@@ -17,7 +17,13 @@
     <description>
         Hello World sample application that responds to the deviceready event.
     </description>
-    <name>FreshBattery</name>
+    <feature name="Accelerometer">
+        <param name="android-package" value="org.apache.cordova.devicemotion.AccelListener" />
+    </feature>
+    <feature name="Compass">
+        <param name="android-package" value="org.apache.cordova.deviceorientation.CompassListener" />
+    </feature>
+    <name>FreshDemo</name>
     <description>
         Hello World sample application that responds to the deviceready event.
     </description>
