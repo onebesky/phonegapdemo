@@ -46,8 +46,11 @@ var app = {
     },
     updateDeviceName: function(){
         var deviceElement = document.getElementById("device-name");
-        console.log(window.device);
-        deviceElement.innerHTML = window.device.name;
+        console.log(device.model, device.cordova, device.platform, device.uuid, device.version, device.name);
+        console.log(device.name);
+        console.log(device.uuid);
+        console.log(device.version);
+        deviceElement.innerHTML = device.uuid + " - " + device.model + " " + device.version;
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
