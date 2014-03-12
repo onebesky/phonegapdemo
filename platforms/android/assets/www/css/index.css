@@ -59,6 +59,17 @@ body {
                                    /* offset horizontal: half of text area width */
 }
 
+#logo {
+    background:url(../img/logo.png) no-repeat center top; /* 170px x 200px */
+    position:absolute;             /* position in the center of the screen */
+    left:50%;
+    top:50%;
+    height:150px;                   /* text area height */
+    width:155px;
+    text-align:center;
+    padding: 160px 0px 0px 0px;
+}
+
 /* Landscape layout (with min-width) */
 @media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
     .app {

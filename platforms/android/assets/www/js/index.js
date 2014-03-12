@@ -37,8 +37,9 @@ var app = {
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
         app.updateDeviceName();
-        document.addEventListener("batterystatus", app.onBatteryStatus, false);
+        //document.addEventListener("batterystatus", app.onBatteryStatus, false);
         //navigator.accelerometer.getCurrentAcceleration(onPhoneMove, function(){console.log("acceleration error")});
+        app.logoElement = document.getElementById("logo");
         app.watchId = navigator.accelerometer.watchAcceleration(app.onPhoneMove, function(){alert("accelerometer failed")}, {
             frequency: 250
         });
@@ -64,10 +65,15 @@ var app = {
         console.log('Received Event: ' + id);
     },
     onPhoneMove: function(acceleration){
+        var deviceElement = app.logoElement;
         var xElement = document.getElementById("x-axis");
         xElement.innerHTML=acceleration.x;
-    },
-    onBatteryStatus: function(info) {
+        var yElement = document.getElementById("y-axis");
+        yElement.innerHTML=acceleration.y;
+        deviceElement.style.left = acceleration.x * 3 + "%";
+        deviceElement.style.top = acceleration.y * 3 + "%";
+    }
+    /*onBatteryStatus: function(info) {
         // Handle the online event
         console.log("Level: " + info.level + " isPlugged: " + info.isPlugged);
         this.displayBatteryInfo(info.level);
@@ -75,5 +81,5 @@ var app = {
     displayBatteryInfo: function(value){
         var statusElement = document.querySelector('#battery-status');
         statusElement.innerHTML = value;
-    }
+    }*/
 };

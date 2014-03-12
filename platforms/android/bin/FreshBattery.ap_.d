@@ -12,6 +12,7 @@ C:\Proj\phonegap\freshbattery\platforms\android\bin\res\drawable-ldpi\icon.png \
 C:\Proj\phonegap\freshbattery\platforms\android\bin\res\drawable-mdpi\icon.png \
 C:\Proj\phonegap\freshbattery\platforms\android\bin\res\drawable-xhdpi\icon.png \
 C:\Proj\phonegap\freshbattery\platforms\android\assets\www \
+C:\Proj\phonegap\freshbattery\platforms\android\assets\www\AndroidManifest.xml \
 C:\Proj\phonegap\freshbattery\platforms\android\assets\www\config.xml \
 C:\Proj\phonegap\freshbattery\platforms\android\assets\www\cordova.js \
 C:\Proj\phonegap\freshbattery\platforms\android\assets\www\cordova_plugins.js \
